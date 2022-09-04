@@ -8,7 +8,7 @@
   "sketch-assistant": {
     "title": "Color Checker",
     "description": "A Sketch Assistant for color checking",
-    "icon": "./logo.png"
+    "icon": "https://github.com/lj0812/sketch-assistant-color-checker/raw/main/logo.png"
   },
   "author": {
     "name": "Colory Panda"
