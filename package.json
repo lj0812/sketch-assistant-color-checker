@@ -1,17 +1,17 @@
 {
-  "name": "sketch-assistant-template",
-  "homepage": "https://github.com/sketch-hq/sketch-assistant-template",
+  "name": "sketch-assistant-color-checker",
+  "homepage": "https://github.com/lj0812/sketch-assistant-color-checker",
   "version": "1.0.0",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
   "sketch-assistant": {
-    "title": "Sketch Assistant Template",
-    "description": "Template repository for a starter Assistant project",
-    "icon": ""
+    "title": "Color Checker",
+    "description": "A Sketch Assistant for color checking",
+    "icon": "./logo.png"
   },
   "author": {
-    "name": "Your Name or Company Name"
+    "name": "Colory Panda"
   },
   "keywords": [
     "sketch",
@@ -19,7 +19,8 @@
     "sketch assistant",
     "public",
     "assistant",
-    "design ops"
+    "design ops",
+    "color check"
   ],
   "files": [
     "dist"
@@ -29,9 +30,11 @@
     "build": "rm -rf dist && npm run build:node && npm run build:sketch",
     "build:node": "tsc",
     "build:sketch": "webpack",
-    "package-tarball": "npm run build && npm pack"
+    "package-tarball": "npm run build && npm pack",
+    "te": "sketch-assistants --json ./src/__tests__/my-test.sketch > out.json"
   },
   "devDependencies": {
+    "@sketch-hq/sketch-assistant-cli": "^6.5.2",
     "@sketch-hq/sketch-assistant-utils": "6.5.2",
     "@types/jest": "27.4.1",
     "@types/node": "17.0.23",
@@ -44,6 +47,7 @@
     "webpack-cli": "4.9.2"
   },
   "dependencies": {
-    "@sketch-hq/sketch-assistant-types": "6.5.0"
+    "@sketch-hq/sketch-assistant-types": "6.5.0",
+    "@sketch-hq/sketch-core-assistant": "^6.5.0"
   }
 }

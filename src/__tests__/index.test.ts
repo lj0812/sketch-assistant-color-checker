@@ -5,7 +5,7 @@ import Assistant from '..'
 
 test('test assistant', async () => {
   const { violations, ruleErrors } = await testAssistant(
-    resolve(__dirname, './empty.sketch'),
+    resolve(__dirname, './my-test.sketch'),
     Assistant,
   )
   expect(violations[0].message).toBe('Hello world')

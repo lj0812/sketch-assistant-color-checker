@@ -3,3 +3,8 @@ node_modules
 .DS_Store
 dist
 /*.tgz
+
+.vscode
+src/temp
+src/__tests__/temp
+src/__tests__/*.sketch
